@@ -18,13 +18,20 @@ Key project outputs:
 - 📊 [View Data Preparation & EDA](notebooks/01_data_preparation.html)
 - 🤖 [View Modeling Results](notebooks/02_modeling_and_evaluation.html)
 
+## 📊 Key Results
+
+- Final model: **Random Forest (F1 ≈ 0.891)**
+- Reduced features from **151 → 45 (~70% reduction)**
+- Maintained performance with improved interpretability
+- Identified key risk factors through EDA and feature analysis
+
 ## 📌 Overview
 
 This project analyzes wildfire damage data from the California Department of Forestry and Fire Protection (CAL FIRE) and builds a structured pipeline to predict structure damage severity under wildfire conditions.
 
 The task is formulated as a binary classification problem, identifying whether a structure is "Destroyed (>50%)".
 
-The analysis emphasizes data quality, feature engineering, and interpretable machine learning for real-world decision support.
+This project demonstrates how data quality, exploratory analysis, and machine learning can be combined into a structured analytics workflow for real-world decision support.
 
 ## 📚 Table of Contents
 - [Key Features](#️-key-features)
@@ -33,15 +40,15 @@ The analysis emphasizes data quality, feature engineering, and interpretable mac
 - [Modeling Results](#-modeling-results)
 - [Skills Demonstrated](#-skills-demonstrated)
 - [Project Structure](#-project-structure)
-- [How to Run](#-how-to-run)
+- [How to Run](#️-how-to-run)
 - [Future Work](#-future-work)
 
 ## ⚙️ Key Features
-- Built an end-to-end ML pipeline (data → features → model → evaluation) for wildfire damage prediction
-- Conducted exploratory data analysis (EDA) to identify key risk factors
-- Reduced feature set from **151 → 45** while maintaining performance
-- Final model: **Random Forest (F1 ≈ 0.891)**
-- Focus on **real-world data quality, feature engineering, and model interpretability**
+- End-to-end ML pipeline (data → features → model → evaluation)
+- Data quality pipeline for handling real-world dataset issues
+- EDA-driven feature engineering and selection
+- Model optimization with feature reduction (~70%)
+- Interpretable modeling using Random Forest
 
 ## 🚀 My Contributions
 - Built a **data quality assessment pipeline** for real-world data issues
@@ -60,7 +67,7 @@ This project includes detailed data quality analysis and cleaning strategies:
 
 These reports capture the reasoning behind data preprocessing and feature engineering decisions, ensuring transparency and reproducibility.
 
-### 🔍 EDA Insights
+### EDA Insights
 
 EDA and modeling reveal that:
 - Mobile homes show significantly higher destruction rates
@@ -72,7 +79,7 @@ This highlights the importance of combining statistical analysis with model-base
 
 ## 🤖 Modeling Results
 
-### 📊 Model Comparison (Test Set)
+### Model Comparison (Test Set)
 
 | Model               | Accuracy | Precision | Recall | F1-score | AUC |
 |---------------------|----------|-----------|--------|----------|-----|
@@ -83,7 +90,7 @@ This highlights the importance of combining statistical analysis with model-base
 
 All results are evaluated on a held-out test set, where Random Forest achieves the best balance across precision, recall, and F1-score and is selected for further optimization.
 
-### 🏆 Final Model & Optimization
+### Final Model & Optimization
 
 We further optimized Random Forest through feature selection:
 
@@ -97,13 +104,9 @@ The final model is **Random Forest (v4-2, 45 features)**:
 
 This demonstrates that feature selection enables significant model simplification without sacrificing predictive performance, making the model more suitable for real-world deployment.
 
-### 🔎 Reconciling EDA and Model Findings
+### EDA vs Model Insights
 
-EDA highlights associations between individual features and damage severity, while model-based interpretations capture conditional effects and feature interactions.
-
-For example, structure types such as mobile homes show high risk in EDA but lower importance in the Random Forest model, as they do not frequently co-occur with other predictive features. In contrast, temporal features (e.g., incident year and month) receive higher importance due to their interaction effects across the dataset.
-
-These differences emphasize the importance of combining exploratory analysis with model-based interpretation to understand both observable patterns and predictive structure, improving the reliability of real-world insights.
+EDA captures individual feature effects, while the model captures interactions, highlighting complementary perspectives in understanding wildfire damage risk.
 
 ## 🧠 Skills Demonstrated
 - Data Cleaning & Validation
