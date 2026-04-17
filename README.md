@@ -1,6 +1,6 @@
 # 🔥 California Wildfire Damage Prediction
 
-Predicting wildfire-induced structural damage using data quality pipelines and interpretable machine learning.
+End-to-end machine learning pipeline for predicting wildfire-induced structural damage using real-world data, with a focus on data quality, feature engineering, and model interpretability.
 
 **Binary Classification | Tabular Data | Imbalanced Dataset**
 
@@ -11,18 +11,12 @@ Predicting wildfire-induced structural damage using data quality pipelines and i
 ![Task](https://img.shields.io/badge/Task-Binary%20Classification-purple)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-## 🚀 Highlights
-- Built an end-to-end ML pipeline (data → features → model → evaluation) for wildfire damage prediction
-- Conducted exploratory data analysis (EDA) to identify key risk factors
-- Reduced feature set from **151 → 45** while maintaining performance
-- Final model: **Random Forest (F1 ≈ 0.891)**
-- Focus on **real-world data quality, feature engineering, and model interpretability**
-
 ## 🌐 Quick Access
-- 👉 [Data Quality Report (EDA Summary)](reports/Data%20Quality%20Report.pdf)
-- 👉 [Data Quality Plan (Cleaning Strategy)](reports/Data%20Quality%20Plan.pdf)
-- 👉 [View Data Preparation & EDA](notebooks/01_data_preparation.html)
-- 👉 [View Modeling Results](notebooks/02_modeling_and_evaluation.html)
+Key project outputs:
+- 📄 [Data Quality Report (EDA Summary)](reports/Data%20Quality%20Report.pdf)
+- 🧹 [Data Quality Plan (Cleaning Strategy)](reports/Data%20Quality%20Plan.pdf)
+- 📊 [View Data Preparation & EDA](notebooks/01_data_preparation.html)
+- 🤖 [View Modeling Results](notebooks/02_modeling_and_evaluation.html)
 
 ## 📌 Overview
 
@@ -33,7 +27,8 @@ The task is formulated as a binary classification problem, identifying whether a
 The analysis emphasizes data quality, feature engineering, and interpretable machine learning for real-world decision support.
 
 ## 📚 Table of Contents
-- [Key Contributions](#-key-contributions)
+- [Key Features](#️-key-features)
+- [My Contributions](#-my-contributions)
 - [Data Quality & EDA Outputs](#-data-quality--eda-outputs)
 - [Modeling Results](#-modeling-results)
 - [Skills Demonstrated](#-skills-demonstrated)
@@ -41,7 +36,14 @@ The analysis emphasizes data quality, feature engineering, and interpretable mac
 - [How to Run](#-how-to-run)
 - [Future Work](#-future-work)
 
-## 🚀 Key Contributions
+## ⚙️ Key Features
+- Built an end-to-end ML pipeline (data → features → model → evaluation) for wildfire damage prediction
+- Conducted exploratory data analysis (EDA) to identify key risk factors
+- Reduced feature set from **151 → 45** while maintaining performance
+- Final model: **Random Forest (F1 ≈ 0.891)**
+- Focus on **real-world data quality, feature engineering, and model interpretability**
+
+## 🚀 My Contributions
 - Built a **data quality assessment pipeline** for real-world data issues
 - Designed and applied **data cleaning strategies** to improve reliability
 - Conducted **EDA and statistical analysis** to guide feature engineering decisions
@@ -60,19 +62,12 @@ These reports capture the reasoning behind data preprocessing and feature engine
 
 ### 🔍 EDA Insights
 
-EDA reveals several factors associated with severe fire damage:
+EDA and modeling reveal that:
+- Mobile homes show significantly higher destruction rates
+- Structural and material features interact with environmental factors
+- Temporal features contribute strongly due to interaction effects
 
-- **Structure Type:**  
-  Mobile homes exhibit significantly higher destruction rates (>70%), likely due to lightweight materials and lower structural stability.
-
-- **Roof Construction:**  
-  Both combustible and fire-resistant materials are associated with high damage rates, suggesting potential heat retention and smoldering effects.
-
-- **Exterior Siding:**  
-  Multiple siding types exhibit similarly high damage rates (~90%), indicating complex interactions between fire spread and heat retention.
-
-- **Ventilation Systems:**  
-  Buildings with vents exhibit higher damage rates, likely due to ember intrusion and increased oxygen supply.
+This highlights the importance of combining statistical analysis with model-based interpretation.
 
 
 ## 🤖 Modeling Results
@@ -183,4 +178,4 @@ jupyter lab
 ## 🔮 Future Work
 - Explore advanced models (XGBoost, LightGBM)
 - Improve spatial features (GIS-based analysis)
-- Address class imbalance more systematically
+- Handle class imbalance with more advanced techniques
