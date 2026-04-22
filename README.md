@@ -11,6 +11,13 @@ End-to-end machine learning pipeline for predicting wildfire-induced structural 
 ![Task](https://img.shields.io/badge/Task-Binary%20Classification-purple)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
+## 🚀 Highlights
+- Built an end-to-end machine learning pipeline for wildfire damage prediction
+- Developed a data quality and feature engineering workflow for noisy real-world data
+- Reduced features from **151 → 45** while maintaining model performance
+- Achieved **F1 ≈ 0.891** with an interpretable Random Forest model
+- Combined EDA and modeling insights for risk factor analysis
+
 ## 🌐 Quick Access
 Key project outputs:
 - 📄 [Data Quality Report (EDA Summary)](reports/Data%20Quality%20Report.pdf)
@@ -18,28 +25,21 @@ Key project outputs:
 - 📊 [View Data Preparation & EDA](notebooks/01_data_preparation.html)
 - 🤖 [View Modeling Results](notebooks/02_modeling_and_evaluation.html)
 
-## 📊 Key Results
-
-- Final model: **Random Forest (F1 ≈ 0.891)**
-- Reduced features from **151 → 45 (~70% reduction)**
-- Maintained performance with improved interpretability
-- Identified key risk factors through EDA and feature analysis
-
 ## 📌 Overview
-
 This project analyzes wildfire damage data from the California Department of Forestry and Fire Protection (CAL FIRE) and builds a structured pipeline to predict structure damage severity under wildfire conditions.
 
 The task is formulated as a binary classification problem, identifying whether a structure is "Destroyed (>50%)".
 
 This project demonstrates how data quality, exploratory analysis, and machine learning can be combined into a structured analytics workflow for real-world decision support.
 
+
 ## 📚 Table of Contents
 - [Key Features](#️-key-features)
-- [My Contributions](#-my-contributions)
+- [Key Results](#-key-results)
 - [Data Quality & EDA Outputs](#-data-quality--eda-outputs)
 - [Modeling Results](#-modeling-results)
 - [Skills Demonstrated](#-skills-demonstrated)
-- [Project Structure](#-project-structure)
+- [Repository Structure](#-repository-structure)
 - [How to Run](#️-how-to-run)
 - [Future Work](#-future-work)
 
@@ -50,13 +50,11 @@ This project demonstrates how data quality, exploratory analysis, and machine le
 - Model optimization with feature reduction (~70%)
 - Interpretable modeling using Random Forest
 
-## 🚀 My Contributions
-- Built a **data quality assessment pipeline** for real-world data issues
-- Designed and applied **data cleaning strategies** to improve reliability
-- Conducted **EDA and statistical analysis** to guide feature engineering decisions
-- Engineered **domain-informed features** for wildfire risk modeling
-- Developed and evaluated **classification models**
-- Produced **model-ready datasets**
+## 📊 Key Results
+- Final model: **Random Forest (F1 ≈ 0.891)**
+- Reduced features from **151 → 45 (~70% reduction)**
+- Maintained performance with improved interpretability
+- Identified key risk factors through EDA and feature analysis
 
 ## 📄 Data Quality & EDA Outputs
 
@@ -115,7 +113,7 @@ EDA captures individual feature effects, while the model captures interactions, 
 - Machine Learning (Classification Models)
 - Reproducibility & Pipeline Design
 
-## 📁 Project Structure 
+## 📁 Repository Structure 
 The project follows a standard data science workflow:
 
 ```
